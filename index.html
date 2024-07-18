@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Data Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        #container {
+            display: flex;
+        }
+        #left {
+            flex: 1;
+        }
+        #right {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .histogram {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="bar-chart"></div>
+            <div id="scatter-plot"></div>
+        </div>
+        <div id="right"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
